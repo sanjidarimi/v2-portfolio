@@ -16,7 +16,7 @@ type StarBorderProps<T extends React.ElementType = "div"> = {
 export default function StarBorder<T extends React.ElementType = "div">({
   as,
   className = "",
-  color = "#a855f7", // Purple glow default
+  color = "#a855f7",
   speed = "6s",
   thickness = 1,
   backgroundColor = "transparent",

@@ -35,7 +35,7 @@
   position: relative;
   border-radius: 9999px;
   z-index: 1;
-  padding: 0; /* Clear default padding */
+  padding: 0;
   background: transparent;
 }
 
@@ -60,3 +60,43 @@
     opacity: 0;
   }
 }
+
+/* Vertical StarBorder variant for mobile vertical docks */
+.star-border-vertical .border-gradient-bottom {
+  width: 150%;
+  height: 250%;
+  bottom: -200%;
+  right: -25%;
+  animation: star-movement-vertical-bottom linear infinite alternate;
+}
+
+.star-border-vertical .border-gradient-top {
+  width: 150%;
+  height: 250%;
+  top: -200%;
+  left: -25%;
+  animation: star-movement-vertical-top linear infinite alternate;
+}
+
+@keyframes star-movement-vertical-bottom {
+  0% {
+    transform: translate(0%, 0%);
+    opacity: 0.85;
+  }
+  100% {
+    transform: translate(0%, -100%);
+    opacity: 0.1;
+  }
+}
+
+@keyframes star-movement-vertical-top {
+  0% {
+    transform: translate(0%, 0%);
+    opacity: 0.85;
+  }
+  100% {
+    transform: translate(0%, 100%);
+    opacity: 0.1;
+  }
+}
+
